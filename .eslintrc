@@ -10,11 +10,28 @@
     "prettier/react"
   ],
   "rules": {
-    // Make prettier code formatting suggestions more verbose.
-    "prettier/prettier": ["warn"],
-    // Disable <Fragment> => <> replacement. Feel free to change
-    "react/jsx-fragments": "off",
-    // Disable prefer default export
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": 0,
+    "react/prop-types": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "arrowParens": "avoid",
+        "bracketSpacing": true,
+        "htmlWhitespaceSensitivity": "css",
+        "insertPragma": false,
+        "jsxBracketSameLine": false,
+        "jsxSingleQuote": false,
+        "printWidth": 80,
+        "proseWrap": "preserve",
+        "quoteProps": "as-needed",
+        "requirePragma": false,
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "es5",
+        "useTabs": false,
+        "vueIndentScriptAndStyle": false
+      }
+    ]
   }
 }

@@ -1,15 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { Provider } from 'react-redux'
-import store from './store'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 
-import './index.css'
-
-import App from './App'
+import { carToolStore } from './store';
+import { CarToolContainer } from './containers/CarToolContainer';
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
+  <Provider store={carToolStore}>
+    <CarToolContainer />
   </Provider>,
-  document.getElementById('root')
-)
+  document.querySelector('#root')
+);
